@@ -1,0 +1,56 @@
+/*FILTER SECTION*/
+.sidebar {
+  display: grid;
+  grid-template-rows: repeat(2, 250px);
+  background-color: whitesmoke;
+  min-height: 100vh;
+  gap: 50px;
+  padding: 20px;
+}
+
+.filters h2 {
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  display: grid;
+  grid-template-rows: repeat(5, 40px);
+  gap: 5px;
+}
+
+.filter-box {
+  outline: 2px solid black;
+  display: grid;
+  grid-template-columns: 20px 80px;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  width: 200px;
+  padding: 4px;
+}
+
+.filter-box p {
+  margin: 0px;
+}
+
+/*CATEGORIES SECTION*/
+.category-button {
+  display: grid;
+  grid-template-rows: repeat(4, 40px);
+  gap: 5px;
+}
+
+.cat-box {
+  outline: 2px solid black;
+  display: grid;
+  grid-template-columns: 20px 80px;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  width: 200px;
+  padding: 4px;
+}
+
+.cat-box p {
+  margin: 0px;
+}

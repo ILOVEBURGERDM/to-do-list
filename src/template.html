@@ -4,9 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <title><to-do-list></to-do-list></title>
+    <link rel="stylesheet" href="universal.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="site">
+      <div class="sidebar">
+        <div class="filters">
+          <h2>Filters</h2>
+          <div class="filter-button">
+            <div id="tasks" class="filter-box">
+              <img src="svg/text-box-check.svg" class="svg" />
+              <p>All Tasks</p>
+            </div>
+            <div id="duedate" class="filter-box">
+              <img src="svg/clock-time-five.svg" class="svg" />
+              <p>Due Date</p>
+            </div>
+            <div id="today" class="filter-box">
+              <img src="svg/calendar.svg" class="svg" />
+              <p>Today</p>
+            </div>
+            <div id="tommorow" class="filter-box">
+              <img src="svg/calendar-clock.svg" class="svg" />
+              <p>Tommorow</p>
+            </div>
+            <div id="monthly" class="filter-box">
+              <img src="svg/calendar-month.svg" class="svg" />
+              <p>This month</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories">
+          <h2>Categories</h2>
+          <div class="category-button">
+            <div id="work" class="cat-box">
+              <img src="svg/tag.svg" class="svg" />
+              <p>Work</p>
+            </div>
+            <div id="personal" class="cat-box">
+              <img src="svg/tag.svg" class="svg" />
+              <p>Personal</p>
+            </div>
+            <div id="school" class="cat-box">
+              <img src="svg/tag.svg" class="svg" />
+              <p>School</p>
+            </div>
+            <div id="long-term" class="cat-box">
+              <img src="svg/tag.svg" class="svg" />
+              <p>Long-term</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="title">
+          <h1>TO-DO-LIST</h1>
+        </div>
+        <div class="body">
+          <h2 id="body-title">All Tasks</h2>
+          <div class="tasks">
+            <div class="task">
+              <div class="task-left">
+                <input type="checkbox" class="tick" />
+                <p>Walk the dog</p>
+              </div>
+              <div class="task-right">
+                <p>1/10/2026</p>
+                <img src="svg/pencil.svg" class="svg" class="edit" />
+                <img src="svg/delete.svg" class="svg" class="delete" />
+              </div>
+            </div>
+            <div class="task">
+              <div class="task-left">
+                <input type="checkbox" class="tick" />
+                <p>Finish Project</p>
+              </div>
+              <div class="task-right">
+                <p>4/10/2026</p>
+                <img src="svg/pencil.svg" class="svg" class="edit" />
+                <img src="svg/delete.svg" class="svg" class="delete" />
+              </div>
+            </div>
+            <div class="addbtn">
+              <img src="svg/plus-box-outline.svg" class="svg" />
+              <p>Add New Task</p>
+            </div>
+
+            <dialog id="form-dialog">
+              <div class="form-container">
+                <form>
+                  <div class="top-section">
+                    <h2>Add New Task</h2>
+                    <button id="cancel">X</button>
+                  </div>
+                  <div class="form-section">
+                    <h3>TITLE</h3>
+                    <input
+                      type="text"
+                      id="input-title"
+                      placeholder="e.g., Walk Dog"
+                    />
+                  </div>
+                  <div class="form-section">
+                    <h3>DESCRIPTION</h3>
+                    <input
+                      type="text"
+                      id="input-description"
+                      placeholder="e.g., Walk at the park"
+                    />
+                  </div>
+                  <div class="form-section">
+                    <h3>CATEGORY</h3>
+                    <input
+                      type="text"
+                      id="input-title"
+                      placeholder="e.g., Walk Dog"
+                    />
+                  </div>
+                  <div class="form-section">
+                    <h3>DUE DATE</h3>
+                    <input
+                      type="date"
+                      id="input-date"
+                      placeholder="1/10/2026"
+                    />
+                  </div>
+                  <button id="add-button">ADD TASK</button>
+                </form>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,10 @@
+/*UNIVERSAL STYLES*/
+.site {
+  display: grid;
+  grid-template-columns: 275px 1fr;
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+}

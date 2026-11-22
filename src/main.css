@@ -1,0 +1,88 @@
+/*MAIN UNIVERSAL*/
+.main {
+  display: grid;
+  grid-template-rows: 75px 1fr;
+}
+
+.body {
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.body h2 {
+  font-size: 30px;
+}
+
+/*TITLE SECTION*/
+.title {
+  justify-items: center;
+  box-shadow: 0 1px 0 grey;
+}
+
+/*TASK CONTAINER*/
+.tick {
+  height: 20px;
+  width: 20px;
+}
+
+.task {
+  width: 625px;
+  display: grid;
+  grid-template-columns: 400px 200px;
+  border-bottom: 2px solid #000000;
+}
+
+.task-left {
+  display: grid;
+  grid-template-columns: 30px 300px;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-right {
+  display: grid;
+  grid-template-columns: 60px 10px 10px;
+  gap: 20px;
+  justify-content: right;
+  align-items: center;
+}
+
+.addbtn {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 20px 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 130px;
+  outline: 2px dotted black;
+  border-radius: 5px;
+}
+
+/*FORM SECTION*/
+.top-section {
+  display: grid;
+  grid-template-columns: 200px 20px;
+  height: 60px;
+}
+
+#cancel {
+  height: 25px;
+  width: 25px;
+}
+
+.form-section h3 {
+  margin: 0px;
+}
+
+.form-section {
+  margin-top: 15px;
+  display: grid;
+  gap: 5px;
+}
+
+#add-button {
+  margin-top: 15px;
+  width: 220px;
+  height: 30px;
+}
